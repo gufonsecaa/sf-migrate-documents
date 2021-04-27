@@ -1,5 +1,5 @@
 Pré requisitos:
-    1. Instalar o node https://nodejs.org/en/
+    1. Instalar o node https://nodejs.org/en/    
 
 Antes de executar os scripts:
     1. Entrar na pasta "documents-migration-server" e alterar o arquivo .env
