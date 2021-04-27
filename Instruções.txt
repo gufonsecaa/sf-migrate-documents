@@ -1,0 +1,25 @@
+Pré requisitos:
+    1. Instalar o node https://nodejs.org/en/
+
+Antes de executar os scripts:
+    1. Entrar na pasta "documents-migration-server" e alterar o arquivo .env
+        - Alterar as variáveis de ambiente e autenticação correspondentes
+        a org do salesforce.
+
+    2. Pasta "imports"
+        - Adicionar o arquivo csv com o mapeamento de registros Origem x Destino
+        (Ids Salesforce dos registros relacionados aos arquivos)
+
+Executar os scripts
+    1. Basta executar os arquivos "send_attachments.bat" ou "send_documents.bat"
+    2. Cada script deve ser executado separadamente.
+
+Possíveis erros:
+    1. ETIMEDOUT: Possível erro de conexão, pode ocorrer quando existe uma instabilidade na rede.
+    2. Este problema irá interromper a execução do script, sendo assim, verificar o último Id Salesforce,
+       encontrar o Id no mapeamento.csv e apagar as linhas anteriores. Executar o script novamente.
+    
+    
+
+
+    

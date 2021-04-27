@@ -1,0 +1,26 @@
+{
+  "name": "documents-migration-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
+    "dev:documents": "ts-node-dev --transpile-only --ignore-watch node_modules src/serverDocument.ts",
+    "build": "tsc",
+    "run:attachments": "node dist/server.js",
+    "run:documents": "node dist/serverDocument.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "csv-parse": "^4.15.4",
+    "dotenv": "^8.2.0",
+    "jsforce": "^2.0.0-beta.3",
+    "objects-to-csv": "^1.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.41",
+    "@types/objects-to-csv": "^1.3.0",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.4"
+  }
+}
